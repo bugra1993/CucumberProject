@@ -1,0 +1,318 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Koala Palace Admin Sign In",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7075674000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to koala palace admin page",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_goes_to_koala_palace_admin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 297750000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter username and password",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_enter_username_and_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11716410000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user sign in",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_sign_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-07T16:23:41.856Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1405000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "TC09_user create hotel room",
+        "description": "",
+        "id": "koala-palace;tc09-user-create-hotel-room",
+        "after": [
+          {
+            "result": {
+              "duration": 946040000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3092929000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user go to \"http://www.kaolapalace-qa-environment2.com/admin/HotelroomAdmin/Create\" room create page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.kaolapalace-qa-environment2.com/admin/HotelroomAdmin/Create\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_go_to_room_create_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228635000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user selects IDHotel drop down \"Star\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Star\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_selects_IDHotel_drop_down_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111748000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user enter code \"1234\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_enter_code_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107952000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user enter name \"enes\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enes\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_enter_name_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118566000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user enter location \"Australia\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Australia\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_enter_location_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 760077000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user enter description \"room create\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"room create\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_enter_description_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 547901000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user drag price to price box",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_drag_price_to_price_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119287000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user selects room type drop down \"Triple\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Triple\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_selects_room_type_drop_down_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115006000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user enter max adult count \"3\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_enter_max_adult_count_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87438000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user enter max children count \"2\" room create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_enter_max_children_count_room_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85294000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user clicks approve button",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_clicks_approve_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91852000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user clicks save button room create",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_clicks_save_button_room_create()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2049025000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user assert saving transaction room create",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.user_assert_saving_transaction_room_create()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelroomcreate"
+          }
+        ]
+      }
+    ],
+    "name": "Koala Palace",
+    "description": "",
+    "id": "koala-palace",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/koalapalace.feature",
+    "tags": [
+      {
+        "name": "@koalapalace",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

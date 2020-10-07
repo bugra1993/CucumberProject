@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.246">
+    <testcase classname="Koala Palace" name="TC09_user create hotel room" time="27.945">
+        <system-out>
+            <![CDATA[Given user goes to koala palace admin page..................................passed
+And user enter username and password........................................passed
+Then user sign in...........................................................passed
+Given user go to "http://www.kaolapalace-qa-environment2.com/admin/HotelroomAdmin/Create" room create page.passed
+And user selects IDHotel drop down "Star" room create.......................passed
+And user enter code "1234" room create......................................passed
+And user enter name "enes" room create......................................passed
+And user enter location "Australia" room create.............................passed
+And user enter description "room create" room create........................passed
+And user drag price to price box............................................passed
+And user selects room type drop down "Triple" room create...................passed
+And user enter max adult count "3" room create..............................passed
+And user enter max children count "2" room create...........................passed
+And user clicks approve button..............................................passed
+And user clicks save button room create.....................................passed
+Then user assert saving transaction room create.............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

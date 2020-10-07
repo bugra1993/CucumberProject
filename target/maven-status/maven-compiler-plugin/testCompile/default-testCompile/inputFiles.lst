@@ -1,0 +1,15 @@
+/Applications/java new lesson/CucumberProject/src/test/java/stepdefinitions/AmazonSearchStepDefinitions.java
+/Applications/java new lesson/CucumberProject/src/test/java/pages/EbayPage.java
+/Applications/java new lesson/CucumberProject/src/test/java/stepdefinitions/AmazonMultipleSearchStepDefinitions.java
+/Applications/java new lesson/CucumberProject/src/test/java/stepdefinitions/WalmartStepDefinitions.java
+/Applications/java new lesson/CucumberProject/src/test/java/utilities/Driver.java
+/Applications/java new lesson/CucumberProject/src/test/java/runners/Runner.java
+/Applications/java new lesson/CucumberProject/src/test/java/pages/WalmartPage.java
+/Applications/java new lesson/CucumberProject/src/test/java/runners/AmazonRunner.java
+/Applications/java new lesson/CucumberProject/src/test/java/pages/AmazonPage.java
+/Applications/java new lesson/CucumberProject/src/test/java/stepdefinitions/Hooks.java
+/Applications/java new lesson/CucumberProject/src/test/java/stepdefinitions/EbaySearchStepDefinitions.java
+/Applications/java new lesson/CucumberProject/src/test/java/pages/GooglePage.java
+/Applications/java new lesson/CucumberProject/src/test/java/stepdefinitions/GoogleSearchStepDefinitions.java
+/Applications/java new lesson/CucumberProject/src/test/java/utilities/ConfigurationReader.java
+/Applications/java new lesson/CucumberProject/src/test/java/runners/EbayRunner.java
