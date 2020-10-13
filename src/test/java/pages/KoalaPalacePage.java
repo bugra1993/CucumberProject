@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class KoalaPalacePage {
 
     public KoalaPalacePage() {
@@ -60,6 +62,41 @@ public class KoalaPalacePage {
     public WebElement hotelRoomCreateApproveButton;
     @FindBy(id = "btnSubmit")
     public WebElement hotelRoomCreateSaveButton;
+
+    @FindBy(id = "IDUser")
+    public WebElement roomReservationIDUserDropDown;
+    @FindBy(id = "IDHotelRoom")
+    public WebElement roomReservationIDHotelRoomDropDown;
+    @FindBy(id = "Price")
+    public WebElement roomReservationPriceBox;
+    @FindBy(id = "DateStart")
+    public WebElement roomReservationDateStart;
+    @FindBy(id = "DateEnd")
+    public WebElement roomReservationDateEnd;
+    @FindBy(id = "AdultAmount")
+    public WebElement roomReservationAdultAmountBox;
+    @FindBy(id = "ChildrenAmount")
+    public WebElement roomReservationChildrenAmountBox;
+    @FindBy(id = "ContactNameSurname")
+    public WebElement roomReservationContactNameSurnameBox;
+    @FindBy(id = "ContactPhone")
+    public WebElement roomReservationContactPhoneBox;
+    @FindBy(id = "ContactEmail")
+    public WebElement roomReservationContactEmailBox;
+    @FindBy(id = "Notes")
+    public WebElement roomReservationNotesBox;
+    @FindBy(id = "Approved")
+    public WebElement roomReservationApprovedBox;
+    @FindBy(id = "IsPaid")
+    public WebElement roomReservationIsPaidBox;
+    @FindBy(id = "btnSubmit")
+    public WebElement roomReservationSaveButton;
+    @FindBy(className = "bootbox-body")
+    public WebElement roomReservationSaveMessage;
+
+    // if we see this web element in this case there is a bug/error and we are not able to create room reservations
+    @FindBy(xpath = "//label[class='error']")
+    public WebElement errorMessages;
 
 
 }

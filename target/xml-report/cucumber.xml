@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.246">
-    <testcase classname="Koala Palace" name="TC09_user create hotel room" time="27.945">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.773">
+    <testcase classname="Koala Palace" name="TC21_user create room reservation start date begin after the date end" time="28.47">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[class='error']&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Bugra-Air.modem', ip: '2001:8003:905d:c100:38da:505f:c400:a6f9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '12'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/q5/tn0j607x7_9...}, goog:chromeOptions: {debuggerAddress: localhost:49210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 52200e4ef60d3d46c87af40a986de9e4&#10;*** Element info: {Using=xpath, value=//label[class='error']}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given user goes to koala palace admin page..................................passed
 And user enter username and password........................................passed
 Then user sign in...........................................................passed
-Given user go to "http://www.kaolapalace-qa-environment2.com/admin/HotelroomAdmin/Create" room create page.passed
-And user selects IDHotel drop down "Star" room create.......................passed
-And user enter code "1234" room create......................................passed
-And user enter name "enes" room create......................................passed
-And user enter location "Australia" room create.............................passed
-And user enter description "room create" room create........................passed
-And user drag price to price box............................................passed
-And user selects room type drop down "Triple" room create...................passed
-And user enter max adult count "3" room create..............................passed
-And user enter max children count "2" room create...........................passed
-And user clicks approve button..............................................passed
-And user clicks save button room create.....................................passed
-Then user assert saving transaction room create.............................passed
+Given user go to "http://www.kaolapalace-qa-environment2.com/admin/RoomReservationAdmin/Create" room reservation page.passed
+And user select IDUser from first dropdown "manager2" room reservation......passed
+And user select IDUser from second dropdown "Moon" room reservation.........passed
+And user enter to "250" price box room reservation..........................passed
+And user choose date from date start "10/14/2020" room reservation..........passed
+And user choose date from date end "10/7/2020" room reservation.............passed
+And user enter Adult count "2" room reservation.............................passed
+And user enter Child count "1" room reservation.............................passed
+And user enter name and surname "enes bozkurt" room reservation.............passed
+And user enter contact phone "1234567788" room reservation..................passed
+And user enter email address "nsbzkrt@gmailc.om" room reservation...........passed
+And user enter notes to box "queen bed" room reservation....................passed
+And user clicks approve button room reservation.............................passed
+And user clicks is paid button room reservation.............................passed
+And user clicks save button room reservation................................passed
+Then user assert negative scenario..........................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[class='error']"}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Bugra-Air.modem', ip: '2001:8003:905d:c100:38da:505f:c400:a6f9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/q5/tn0j607x7_9...}, goog:chromeOptions: {debuggerAddress: localhost:49210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 52200e4ef60d3d46c87af40a986de9e4
+*** Element info: {Using=xpath, value=//label[class='error']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at stepdefinitions.KoalaPalaceStepDef.user_assert_negative_scenario(KoalaPalaceStepDef.java:268)
+	at ✽.user assert negative scenario(file:///Applications/java%20new%20lesson/CucumberProject/src/test/resources/features/koalapalace.feature:266)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

@@ -4,7 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.KoalaPalacePage;
 import utilities.Driver;
 
@@ -171,5 +173,100 @@ public class KoalaPalaceStepDef {
         Assert.assertTrue(page.hotelRoomCreateSuccessText.isDisplayed());
 
     }
+
+    @Given("user go to {string} room reservation page")
+    public void user_go_to_room_reservation_page(String string) {
+        Driver.getDriver().get(string);
+    }
+
+    @Given("user select IDUser from first dropdown {string} room reservation")
+    public void user_select_IDUser_from_first_dropdown_room_reservation(String string) {
+        Select select = new Select(page.roomReservationIDUserDropDown);
+        select.selectByVisibleText(string);
+    }
+
+    @Given("user select IDUser from second dropdown {string} room reservation")
+    public void user_select_IDUser_from_second_dropdown_room_reservation(String string) {
+        Select select = new Select(page.roomReservationIDHotelRoomDropDown);
+        select.selectByVisibleText(string);
+    }
+
+    @Given("user enter to {string} price box room reservation")
+    public void user_enter_to_price_box_room_reservation(String string) {
+        page.roomReservationPriceBox.sendKeys(string);
+    }
+
+    @Given("user choose date from date start {string} room reservation")
+    public void user_choose_date_from_date_start_room_reservation(String string) {
+        page.roomReservationDateStart.sendKeys(string);
+    }
+
+    @Given("user choose date from date end {string} room reservation")
+    public void user_choose_date_from_date_end_room_reservation(String string) {
+        page.roomReservationDateEnd.sendKeys(string);
+    }
+
+    @Given("user enter Adult count {string} room reservation")
+    public void user_enter_Adult_count_room_reservation(String string) {
+        page.roomReservationAdultAmountBox.sendKeys(string);
+    }
+
+    @Given("user enter Child count {string} room reservation")
+    public void user_enter_Child_count_room_reservation(String string) {
+        page.roomReservationChildrenAmountBox.sendKeys(string);
+    }
+
+    @Given("user enter name and surname {string} room reservation")
+    public void user_enter_name_and_surname_room_reservation(String string) {
+        page.roomReservationContactNameSurnameBox.sendKeys(string);
+    }
+
+    @Given("user enter contact phone {string} room reservation")
+    public void user_enter_contact_phone_room_reservation(String string) {
+        page.roomReservationContactPhoneBox.sendKeys(string);
+    }
+
+    @Given("user enter email address {string} room reservation")
+    public void user_enter_email_address_room_reservation(String string) {
+        page.roomReservationContactEmailBox.sendKeys(string);
+    }
+
+    @Given("user enter notes to box {string} room reservation")
+    public void user_enter_notes_to_box_room_reservation(String string) {
+        page.roomReservationNotesBox.sendKeys(string);
+    }
+
+    @Given("user clicks approve button room reservation")
+    public void user_clicks_approve_button_room_reservation() {
+        page.roomReservationApprovedBox.click();
+    }
+
+    @Given("user clicks is paid button room reservation")
+    public void user_clicks_is_paid_button_room_reservation() {
+        page.roomReservationIsPaidBox.click();
+    }
+
+    @Given("user clicks save button room reservation")
+    public void user_clicks_save_button_room_reservation() {
+        page.roomReservationSaveButton.click();
+    }
+
+    @Given("user assert saving transaction room reservation")
+    public void user_assert_saving_transaction_room_reservation() {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
+
+        Assert.assertTrue(wait.until(ExpectedConditions.visibilityOf(page.roomReservationSaveMessage)).isDisplayed());
+    }
+
+    @Then("user assert negative scenario")
+    public void user_assert_negative_scenario() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+
+        }
+        Assert.assertTrue(page.errorMessages.isDisplayed());
+    }
+
 
 }
