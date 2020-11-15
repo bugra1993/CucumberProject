@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T17:15:18.320Z",
+        "start_timestamp": "2020-11-15T20:38:10.768Z",
         "line": 4,
         "name": "Kullanici hotel tablosundaki verileri okur",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2386520000,
+              "duration": 2274205000,
               "status": "passed"
             },
             "line": 5,
@@ -25,11 +25,11 @@
           },
           {
             "result": {
-              "duration": 305268000,
+              "duration": 501769000,
               "status": "passed"
             },
             "line": 6,
-            "name": "kullanici \"tHOTEL\" tablosundaki \"Email\" verileri alir",
+            "name": "kullanici \"tHOTEL\" tablosundaki \"Name\" verileri alir",
             "match": {
               "arguments": [
                 {
@@ -37,7 +37,7 @@
                   "offset": 10
                 },
                 {
-                  "val": "\"Email\"",
+                  "val": "\"Name\"",
                   "offset": 32
                 }
               ],
@@ -47,15 +47,15 @@
           },
           {
             "result": {
-              "duration": 249170000,
+              "duration": 1296195000,
               "status": "passed"
             },
             "line": 7,
-            "name": "kullanici  \"Email\" verilerini okur",
+            "name": "kullanici  \"Name\" verilerini okur",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Email\"",
+                  "val": "\"Name\"",
                   "offset": 11
                 }
               ],

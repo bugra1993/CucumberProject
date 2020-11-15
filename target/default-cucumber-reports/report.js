@@ -30,7 +30,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici \"tHOTEL\" tablosundaki \"Email\" verileri alir",
+  "name": "kullanici \"tHOTEL\" tablosundaki \"Name\" verileri alir",
   "keyword": "And "
 });
 formatter.match({
@@ -40,7 +40,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici  \"Email\" verilerini okur",
+  "name": "kullanici  \"Name\" verilerini okur",
   "keyword": "And "
 });
 formatter.match({

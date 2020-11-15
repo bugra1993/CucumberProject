@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.218">
-    <testcase classname="Data Reading" name="Kullanici hotel tablosundaki verileri okur" time="3.009">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.548">
+    <testcase classname="Data Reading" name="Kullanici hotel tablosundaki verileri okur" time="4.191">
         <system-out>
             <![CDATA[Given kullanici veri tabanina baglanir......................................passed
-And kullanici "tHOTEL" tablosundaki "Email" verileri alir...................passed
-And kullanici  "Email" verilerini okur......................................passed
+And kullanici "tHOTEL" tablosundaki "Name" verileri alir....................passed
+And kullanici  "Name" verilerini okur.......................................passed
 ]]>
         </system-out>
     </testcase>

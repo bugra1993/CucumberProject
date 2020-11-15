@@ -36,16 +36,15 @@ public class DbReaderStepDef {
         resultSet.next();// resultsetin icindeki ilk satiri atliyoruz
         Object ikinciVeri = resultSet.getObject(string);
         System.out.println(ikinciVeri.toString()); */
+
+
+        // resultSet.first();// bu kod ilk satira goturmek icin kullanilir
         int count = 0;
         while (resultSet.next()) {
             count++;
             Object veri = resultSet.getObject(string);
             System.out.println(count + "." + veri.toString());
 
-            if (!veri.toString().contains("@")) {
-                System.out.println(count + "satirda email hatali");
-                break;
-            }
         }
 
 
